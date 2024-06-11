@@ -29,7 +29,7 @@ The Triador computer uses a 3-trit balanced ternary system with registers that c
 - A 6-trit program counter register
 - Read-only program memory with 27 segments, each containing 27 instructions
 
-![Triador Architecture](attachment:path-to-uploaded-file)
+![./images/triador-instructions.png]
 
 ### Instruction Set
 The Triador instruction set consists of 9 instructions, each with a mandatory 3-trit argument:
@@ -43,7 +43,7 @@ The Triador instruction set consists of 9 instructions, each with a mandatory 3-
 - R3 ttt: Write to R3
 - R4 ttt: Write to R4
 
-![Instruction Set](attachment:path-to-uploaded-file)
+![./images/Instruction Set](attachment:path-to-uploaded-file)
 
 ### Practical Implementation
 The encryption process involves generating public and private keys, using these keys to manipulate the exponentiation of base values, and subsequently encoding characters. Decryption reverses this process, utilizing the private key to retrieve the original data. Below is the Python implementation of the described cryptographic method.
