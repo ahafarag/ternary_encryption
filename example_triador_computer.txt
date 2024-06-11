@@ -1,11 +1,11 @@
 
 # A Novel Approach to Cryptography Using Ternary-Based Exponentiation with Randomized Keys
 
-**Author: [Your Name]**
+**Author: Abdelrahman FARAG**
 
-**Affiliation: [Your Institution or Company, if any]**
+**Affiliation: https://github.com/ssloy/triador **
 
-**Contact: [Your Email Address]**
+**Contact: abdelrahmanfarag1980@gmail.com **
 
 ## Abstract
 This paper presents a novel cryptographic method leveraging ternary-based exponentiation and randomized keys to enhance security. The method, which transforms traditional binary-based encryption, utilizes custom power functions and random keys for encryption and decryption. This paper details the theoretical foundations, practical implementation, and the mathematical representation of the encryption algorithm, demonstrating its effectiveness with a practical example.
