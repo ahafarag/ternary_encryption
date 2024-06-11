@@ -1,4 +1,4 @@
-
+```
 ## Abstract
 
 This paper presents a novel cryptographic method leveraging ternary-based exponentiation and randomized keys to enhance security. The method, which transforms traditional binary-based encryption, utilizes custom power functions and random keys for encryption and decryption. This paper details the theoretical foundations, practical implementation, and the mathematical representation of the encryption algorithm, demonstrating its effectiveness with a practical example.
@@ -11,7 +11,7 @@ Cryptography is essential for securing data in digital communication. Traditiona
 
 The encryption process involves generating public and private keys, using these keys to manipulate the exponentiation of base values, and subsequently encoding characters. Decryption reverses this process, utilizing the private key to retrieve the original data. Below is the Python implementation of the described cryptographic method.
 
-```python
+```
 import random
 
 # Key generation function
