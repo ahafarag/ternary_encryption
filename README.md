@@ -23,3 +23,4 @@ Full license text can be found [here](https://creativecommons.org/licenses/by-sa
 ## How to Cite
 
 If you use this work in your research, please cite it as follows:
+Abdelrahman FARAG. "A Novel Approach to Cryptography Using Ternary-Based Exponentiation with Randomized Keys". 2024. Available at: https://github.com/ahafarag/ternary_encryption
