@@ -47,7 +47,7 @@ The Triador instruction set consists of 9 instructions, each with a mandatory 3-
 
 ### Practical Implementation
 The encryption process involves generating public and private keys, using these keys to manipulate the exponentiation of base values, and subsequently encoding characters. Decryption reverses this process, utilizing the private key to retrieve the original data. Below is the Python implementation of the described cryptographic method.
-![](https://raw.githubusercontent.com/ssloy/triador/master/doc/add-with-overflow-control.png)
+
 ### Python Code
 ```python
 import random
@@ -104,7 +104,7 @@ print(f'Encrypted {char}: {encrypted}')
 decrypted = decrypt_ternary(encrypted, priv_key, pub_key)
 print(f'Decrypted {encrypted}: {decrypted}')
 ```
-
+![](https://raw.githubusercontent.com/ssloy/triador/master/doc/add-with-overflow-control.png)
 ### Conclusion
 By adapting your encryption and decryption algorithms to fit within the Triador's ternary architecture, you can explore the potential of ternary computing for cryptographic applications. This involves translating binary logic into ternary, utilizing the Triador's registers effectively, and converting your steps into the Triador's instruction set. The example programs provided demonstrate how to implement these steps on the Triador computer, showcasing the feasibility of this approach. Future work could involve optimizing these programs for efficiency and exploring other cryptographic algorithms within the ternary framework.
 
