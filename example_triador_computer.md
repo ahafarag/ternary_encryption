@@ -129,3 +129,4 @@ By adapting your encryption and decryption algorithms to fit within the Triador'
 1. Schneier, B. (1996). *Applied Cryptography: Protocols, Algorithms, and Source Code in C*. John Wiley & Sons.
 2. Stallings, W. (2017). *Cryptography and Network Security: Principles and Practice*. Pearson.
 3. Menezes, A. J., van Oorschot, P. C., & Vanstone, S. A. (1996). *Handbook of Applied Cryptography*. CRC Press.
+4. The ultimate goal: a ternary computer https://github.com/ssloy/triador
