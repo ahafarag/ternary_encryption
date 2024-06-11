@@ -119,6 +119,7 @@ EX PON # Execute power function (example function placeholder)
 RR OON # Copy result to R9
 
 # End of decryption
+```
 ## Conclusion
 
 By adapting your encryption and decryption algorithms to fit within the Triador's ternary architecture, you can explore the potential of ternary computing for cryptographic applications. This involves translating binary logic into ternary, utilizing the Triador's registers effectively, and converting your steps into the Triador's instruction set. The example programs provided demonstrate how to implement these steps on the Triador computer, showcasing the feasibility of this approach. Future work could involve optimizing these programs for efficiency and exploring other cryptographic algorithms within the ternary framework.
