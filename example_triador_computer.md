@@ -29,7 +29,7 @@ The Triador computer uses a 3-trit balanced ternary system with registers that c
 - A 6-trit program counter register
 - Read-only program memory with 27 segments, each containing 27 instructions
 
-![./images/triador-instructions.png]
+![](./images/triador-instructions.png)
 
 ### Instruction Set
 The Triador instruction set consists of 9 instructions, each with a mandatory 3-trit argument:
