@@ -1,10 +1,8 @@
 # A Novel Approach to Cryptography Using Ternary-Based Exponentiation with Randomized Keys
 
-**Author: [Your Name]**
+**Author:Abdelrahman Farag**
 
-**Affiliation: [Your Institution or Company, if any]**
-
-**Contact: [Your Email Address]**
+**Contact: abdelrahmanfarag1980@gmail.com**
 
 This repository contains the research paper "A Novel Approach to Cryptography Using Ternary-Based Exponentiation with Randomized Keys" along with the code implementation.
 
