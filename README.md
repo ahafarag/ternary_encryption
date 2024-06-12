@@ -92,11 +92,11 @@ for some integer $\( k \)$
 ### Detailed Steps and Analysis
 
 1. **Encryption:**
-   - Given a character and a public key, calculate $\text{base}^{\text{exp1}}$ and $\text{base}^{(\text{exp2} + \text{pub\_key})}$.
-   - These calculations produce a tuple $\text{base}^{\text{exp1}}, \text{base}^{(\text{exp2} + \text{pub\_key})}$.
+   - Given a character and a public key, calculate $(\text{base}^{\text{exp1}})$ and $(\text{base}^{(\text{exp2} + \text{pub\_key})})$.
+   - These calculations produce a tuple $(\text{base}^{\text{exp1}}, \text{base}^{(\text{exp2} + \text{pub\_key})})$.
 
 2. **Decryption:**
-   - Using the encrypted tuple $ \text{base}^{\text{exp1}}, \text{base}^{(\text{exp2} + \text{pub\_key})} $ and the private key, reverse the process to find the original character.
+   - Using the encrypted tuple $(\text{base}^{\text{exp1}}, \text{base}^{(\text{exp2} + \text{pub\_key})} )$ and the private key, reverse the process to find the original character.
 
 ### Example Walkthrough
 
