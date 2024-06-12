@@ -108,9 +108,9 @@ To solidify this understanding, let's consider a simple example:
 - Suppose `pub_key = 7`.
 
 #### Encryption:
-\[ E('A', 7) = (2^3, 2^{(5 + 7)}) \]
-\[ E('A', 7) = (8, 2^{12}) \]
-\[ E('A', 7) = (8, 4096) \]
+$\[ E('A', 7) = (2^3, 2^{(5 + 7)}) \]$
+$\[ E('A', 7) = (8, 2^{12}) \]$
+$\[ E('A', 7) = (8, 4096) \]$
 
 #### Decryption:
 - Suppose `k = 4`, thus `priv_key = pub_key + k = 7 + 4 = 11`.
