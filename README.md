@@ -76,7 +76,9 @@ print(f'Decrypted {encrypted}: {decrypted}')
 ## Mathematical Representation
 The encryption function can be mathematically represented as:
 
-$E(\text{char}, \text{pub\_key}) = (\text{base}^{\text{exp1}}, \text{base}^{(\text{exp2} + \text{pub\_key})})$
+$$
+E(\text{char}, \text{pub_key}) = (\text{base}^{\text{exp1}}, \text{base}^{(\text{exp2} + \text{pub_key})})
+$$
 
 The decryption function reverses this process:
 
