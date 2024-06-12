@@ -74,6 +74,8 @@ decrypted = decrypt_ternary(encrypted, priv_key, pub_key)
 print(f'Decrypted {encrypted}: {decrypted}')
 ```
 ## Mathematical Representation
+## Mathematical Representation
+
 The encryption function can be mathematically represented as:
 \[ E(\text{char}, \text{pub\_key}) = (\text{base}^{\text{exp1}}, \text{base}^{(\text{exp2} + \text{pub\_key})}) \]
 
@@ -83,6 +85,42 @@ The decryption function reverses this process:
 where `pub_key` and `priv_key` are randomly generated keys such that:
 \[ \text{priv\_key} = \text{pub\_key} + k \]
 for some integer \( k \).
+
+### Detailed Steps and Analysis
+
+1. **Encryption:**
+   - Given a character and a public key, calculate \( \text{base}^{\text{exp1}} \) and \( \text{base}^{(\text{exp2} + \text{pub\_key})} \).
+   - These calculations produce a tuple \(( \text{base}^{\text{exp1}}, \text{base}^{(\text{exp2} + \text{pub\_key})} )\).
+
+2. **Decryption:**
+   - Using the encrypted tuple \(( \text{base}^{\text{exp1}}, \text{base}^{(\text{exp2} + \text{pub\_key})} )\) and the private key, reverse the process to find the original character.
+
+### Example Walkthrough
+
+To solidify this understanding, let's consider a simple example:
+
+#### Setup:
+- Choose a base, say `base = 2`.
+- Let `char = 'A'`.
+- Suppose `exp1` and `exp2` are derived from the character in a known manner (e.g., ASCII value).
+- Let's pick `exp1 = 3` and `exp2 = 5` for simplicity.
+- Suppose `pub_key = 7`.
+
+#### Encryption:
+\[ E('A', 7) = (2^3, 2^{(5 + 7)}) \]
+\[ E('A', 7) = (8, 2^{12}) \]
+\[ E('A', 7) = (8, 4096) \]
+
+#### Decryption:
+- Suppose `k = 4`, thus `priv_key = pub_key + k = 7 + 4 = 11`.
+- The decryption function uses `priv_key = 11` to reverse the encryption.
+
+Without loss of generality, assume the decryption process can isolate `exp1` and `exp2` by reversing the exponentiation steps, given the tuple and `priv_key`.
+
+### Conclusion
+
+This encryption and decryption process hinges on exponentiation and the relationship between the public and private keys. The precise method to derive `exp1` and `exp2` and to reverse the process (i.e., decrypt the tuple back to the original character) would depend on the specific algorithm design and mathematical properties being utilized.
+
 
 ## Conclusion
 This paper introduces an innovative approach to cryptography using ternary-based exponentiation and random keys. The method enhances security by leveraging the complexity of ternary arithmetic and the unpredictability of randomized keys. The practical implementation demonstrates the feasibility and robustness of the proposed method. Future work could explore optimizing the algorithm for various use cases and integrating it into broader cryptographic frameworks.
