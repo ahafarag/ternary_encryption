@@ -89,6 +89,9 @@ EX PON # Execute power function (example function placeholder)
 RR OON # Copy result to R9
 
 # End of encryption
+```
+
+```plaintext
 ## Decryption Algorithm in Ternary
 
 #### Example Program: Decrypting a Character
