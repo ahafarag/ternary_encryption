@@ -128,11 +128,11 @@ This encryption and decryption process hinges on exponentiation and the relation
 ## Conclusion
 This paper introduces an innovative approach to cryptography using ternary-based exponentiation and random keys. The method enhances security by leveraging the complexity of ternary arithmetic and the unpredictability of randomized keys. The practical implementation demonstrates the feasibility and robustness of the proposed method. Future work could explore optimizing the algorithm for various use cases and integrating it into broader cryptographic frameworks.
 
-References
-Schneier, B. (1996). Applied Cryptography: Protocols, Algorithms, and Source Code in C. John Wiley & Sons.
-Stallings, W. (2017). Cryptography and Network Security: Principles and Practice. Pearson.
-Menezes, A. J., van Oorschot, P. C., & Vanstone, S. A. (1996). Handbook of Applied Cryptography. CRC Press.
-
+## References
+- Schneier, B. (1996). Applied Cryptography: Protocols, Algorithms, and Source Code in C. John Wiley & Sons.
+- Stallings, W. (2017). Cryptography and Network Security: Principles and Practice. Pearson.
+- Menezes, A. J., van Oorschot, P. C., & Vanstone, S. A. (1996). Handbook of Applied Cryptography. CRC Press.
+- The ultimate goal: a ternary computer https://github.com/ssloy/triador
 ## License
 
 This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License. 
