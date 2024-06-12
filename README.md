@@ -92,11 +92,11 @@ for some integer $\( k \)$
 ### Detailed Steps and Analysis
 
 1. **Encryption:**
-   - Given a character and a public key, calculate $\text{base}^{\text{exp1}} \)$ and $\( \text{base}^{(\text{exp2} + \text{pub\_key})}$.
-   - These calculations produce a tuple $( \text{base}^{\text{exp1}}, \text{base}^{(\text{exp2} + \text{pub\_key})} )$.
+   - Given a character and a public key, calculate $ \text{base}^{\text{exp1}} $ and $ \text{base}^{(\text{exp2} + \text{pub\_key})}$.
+   - These calculations produce a tuple $ \text{base}^{\text{exp1}}, \text{base}^{(\text{exp2} + \text{pub\_key})} $.
 
 2. **Decryption:**
-   - Using the encrypted tuple $( \text{base}^{\text{exp1}}, \text{base}^{(\text{exp2} + \text{pub\_key})} )$ and the private key, reverse the process to find the original character.
+   - Using the encrypted tuple $ \text{base}^{\text{exp1}}, \text{base}^{(\text{exp2} + \text{pub\_key})} $ and the private key, reverse the process to find the original character.
 
 ### Example Walkthrough
 
@@ -110,9 +110,11 @@ To solidify this understanding, let's consider a simple example:
 - Suppose `pub_key = 7`.
 
 #### Encryption:
-$\[ E('A', 7) = (2^3, 2^{(5 + 7)}) \]$
-$\[ E('A', 7) = (8, 2^{12}) \]$
-$\[ E('A', 7) = (8, 4096) \]$
+```math
+E('A', 7) = (2^3, 2^{(5 + 7)}) 
+E('A', 7) = (8, 2^{12})
+E('A', 7) = (8, 4096)
+```
 
 #### Decryption:
 - Suppose `k = 4`, thus `priv_key = pub_key + k = 7 + 4 = 11`.
@@ -120,7 +122,7 @@ $\[ E('A', 7) = (8, 4096) \]$
 
 Without loss of generality, assume the decryption process can isolate `exp1` and `exp2` by reversing the exponentiation steps, given the tuple and `priv_key`.
 
-### Conclusion
+### explaination
 
 This encryption and decryption process hinges on exponentiation and the relationship between the public and private keys. The precise method to derive `exp1` and `exp2` and to reverse the process (i.e., decrypt the tuple back to the original character) would depend on the specific algorithm design and mathematical properties being utilized.
 
