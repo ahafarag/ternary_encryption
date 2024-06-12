@@ -77,23 +77,26 @@ print(f'Decrypted {encrypted}: {decrypted}')
 The encryption function can be mathematically represented as:
 
 ```math
-\[ $E(\text{char}, \text{pub\_key}) = (\text{base}^{\text{exp1}}, \text{base}^{(\text{exp2} + \text{pub\_key})}) \]$
+E(\text{char}, \text{pub\_key}) = (\text{base}^{\text{exp1}}, \text{base}^{(\text{exp2} + \text{pub\_key})})
 ```
 The decryption function reverses this process:
-$\[ D(E(\text{char}, \text{pub\_key}), \text{priv\_key}) = \text{char} \]$
-
+```math
+D(E(\text{char}, \text{pub\_key}), \text{priv\_key}) = \text{char} 
+```
 where `pub_key` and `priv_key` are randomly generated keys such that:
-$\[ \text{priv\_key} = \text{pub\_key} + k \]$
-for some integer $\( k \)$.
+```math
+\text{priv\_key} = \text{pub\_key} + k
+```
+for some integer $\( k \)$
 
 ### Detailed Steps and Analysis
 
 1. **Encryption:**
-   - Given a character and a public key, calculate $\( \text{base}^{\text{exp1}} \)$ and $\( \text{base}^{(\text{exp2} + \text{pub\_key})} \)$.
-   - These calculations produce a tuple $\(( \text{base}^{\text{exp1}}, \text{base}^{(\text{exp2} + \text{pub\_key})} )\)$.
+   - Given a character and a public key, calculate $\text{base}^{\text{exp1}} \)$ and $\( \text{base}^{(\text{exp2} + \text{pub\_key})}$.
+   - These calculations produce a tuple $( \text{base}^{\text{exp1}}, \text{base}^{(\text{exp2} + \text{pub\_key})} )$.
 
 2. **Decryption:**
-   - Using the encrypted tuple $\(( \text{base}^{\text{exp1}}, \text{base}^{(\text{exp2} + \text{pub\_key})} )\)$ and the private key, reverse the process to find the original character.
+   - Using the encrypted tuple $( \text{base}^{\text{exp1}}, \text{base}^{(\text{exp2} + \text{pub\_key})} )$ and the private key, reverse the process to find the original character.
 
 ### Example Walkthrough
 
