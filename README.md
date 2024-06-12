@@ -74,18 +74,16 @@ decrypted = decrypt_ternary(encrypted, priv_key, pub_key)
 print(f'Decrypted {encrypted}: {decrypted}')
 ```
 ## Mathematical Representation
-## Mathematical Representation
-
 The encryption function can be mathematically represented as:
 
-$$ \[ $E(\text{char}, \text{pub\_key}) = (\text{base}^{\text{exp1}}, \text{base}^{(\text{exp2} + \text{pub\_key})}) \] $$
+$\[ $E(\text{char}, \text{pub\_key}) = (\text{base}^{\text{exp1}}, \text{base}^{(\text{exp2} + \text{pub\_key})}) \]$
 
 The decryption function reverses this process:
-\[ D(E(\text{char}, \text{pub\_key}), \text{priv\_key}) = \text{char} \]
+$\[ D(E(\text{char}, \text{pub\_key}), \text{priv\_key}) = \text{char} \]$
 
 where `pub_key` and `priv_key` are randomly generated keys such that:
-\[ \text{priv\_key} = \text{pub\_key} + k \]
-for some integer \( k \).
+$\[ \text{priv\_key} = \text{pub\_key} + k \]$
+for some integer $\( k \)$.
 
 ### Detailed Steps and Analysis
 
