@@ -74,81 +74,17 @@ decrypted = decrypt_ternary(encrypted, priv_key, pub_key)
 print(f'Decrypted {encrypted}: {decrypted}')
 ```
 ## Mathematical Representation
+
 The encryption function can be mathematically represented as:
-The encryption function can be mathematically represented as:
-𝐸
-(
-𝑐
-ℎ
-𝑎
-𝑟
-,
-pub_key
-)
-=
-(
-𝑏
-𝑎
-𝑠
-𝑒
-𝑒
-𝑥
-𝑝
-1
-,
-𝑏
-𝑎
-𝑠
-𝑒
-(
-𝑒
-𝑥
-𝑝
-2
-+
-pub_key
-)
-)
-E(char,pub_key)=(base 
-exp1
- ,base 
-(exp2+pub_key)
- )
+\[ E(\text{char}, \text{pub\_key}) = (\text{base}^{\text{exp1}}, \text{base}^{(\text{exp2} + \text{pub\_key})}) \]
+
 The decryption function reverses this process:
-𝐷
-(
-𝐸
-(
-𝑐
-ℎ
-𝑎
-𝑟
-,
-pub_key
-)
-,
-priv_key
-)
-=
-𝑐
-ℎ
-𝑎
-𝑟
-D(E(char,pub_key),priv_key)=char
-where 
-pub_key
-pub_key and 
-priv_key
-priv_key are randomly generated keys such that:
-priv_key
-=
-pub_key
-+
-𝑘
-priv_key=pub_key+k
-for some integer 
-𝑘
-k.
+\[ D(E(\text{char}, \text{pub\_key}), \text{priv\_key}) = \text{char} \]
+
+where \(\text{pub\_key}\) and \(\text{priv\_key}\) are randomly generated keys such that:
+\[ \text{priv\_key} = \text{pub\_key} + k \]
+for some integer \( k \).
+
 ## Conclusion
 This paper introduces an innovative approach to cryptography using ternary-based exponentiation and random keys. The method enhances security by leveraging the complexity of ternary arithmetic and the unpredictability of randomized keys. The practical implementation demonstrates the feasibility and robustness of the proposed method. Future work could explore optimizing the algorithm for various use cases and integrating it into broader cryptographic frameworks.
 
