@@ -86,6 +86,7 @@ where \(\text{pub\_key}\) and \(\text{priv\_key}\) are randomly generated keys s
 for some integer \( k \).
 
 
+
 ## Conclusion
 This paper introduces an innovative approach to cryptography using ternary-based exponentiation and random keys. The method enhances security by leveraging the complexity of ternary arithmetic and the unpredictability of randomized keys. The practical implementation demonstrates the feasibility and robustness of the proposed method. Future work could explore optimizing the algorithm for various use cases and integrating it into broader cryptographic frameworks.
 
