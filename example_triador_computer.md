@@ -1,3 +1,5 @@
+![image](https://github.com/ahafarag/ternary_encryption/assets/117376293/73d66dd4-0225-4de4-ac0a-9c9828ee772f)
+
 # A Novel Approach to Cryptography Using Ternary-Based Exponentiation with Randomized Keys
 
 **Author:** Abdelrahman FARAG  
